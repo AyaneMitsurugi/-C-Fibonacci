@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+//RECURSIVE FUNCTION - FIBONACCI
+
+int fibo(int n)
+{
+    if(n==0)
+        return 0;
+    else if(n==1 || n==2)
+        return 1;
+    else
+        return fibo(n-1)+fibo(n-2);
+}
+
+int main()
+{
+    printf("     /***** FIBONACCI *****/\n");
+    printf("Write the number of Fibonacci's element You want to see\n");
+
+    int n;
+    scanf("%i", &n);
+    printf("\n");
+
+    printf("Fibonacci[%i] is: ", n-1);
+    printf("%i\n", fibo(n));
+
+return 0;
+}
